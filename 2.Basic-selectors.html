@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Selectors</title>
+
+        <style>
+            /* Bütün H1 leri seçmek için*/
+            /* h1{
+                color: red;
+                background: blue;
+            }
+            p{
+                color: blue;
+                background: yellowgreen;
+            } */
+            /* ikisini aynı anda yapmak için*/
+            /* h1,p{
+                color: blue;
+                background: yellow;
+            } */
+            /* id si logo olanı seçmek için #logo !!!id!!! için*/
+            /* #logo{
+                color: blue;
+                background: yellow;
+            } */
+            /* class seçmek için !!! . !!! kullanılıyor*/
+            /* .info{
+                color: blue;
+                background: green;
+            } */
+            /* veya eki ile hem id hem class seçmek için , kullanıyoruz */
+            /* #logo, .lead{
+                color: blue;
+                background: yellow;
+            } */
+            /* hem id hem class seçmek "ve" ile kullanmak için yani hem id si bu olsun hemde classı bu olsun */
+            /* #para1.lead{
+                color: yellow;
+                background: blue;
+            } */
+            /* Linklerde alttaki çizgiyi yok etmek için kullanılıyor*/
+            /* a{
+                text-decoration: none;
+            } */
+
+            /*Sadece ul nin ve altındaki li nin altındaki a ları seçmek için kullandığımız yöntem*/
+            /* ul li a{
+                text-decoration: none;
+            } */
+            /* Classı info olanların içerisindeki spannlari al */
+            /* .info span {
+                color: blue;
+                background: yellowgreen;
+            } */
+            /* classı info olan ve infonun içerisinde classı primary olanı seç */
+            /* .info .primary{
+                color: blue;
+            } */
+            /* Bütün etiketleri seçmek için evrensel seçici*/
+            *{
+                font-size: 30px;
+            }
+
+        </style>
+
+
+</head>
+<body>
+    <header>
+        <h1>Header 1</h1>
+        <h1 id="logo">Logo</h1>
+
+        <ul>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+    </header>
+    <h1>Header 2</h1>
+    <p id="para1" class="lead info">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, reiciendis!
+    </p>
+    <p class="info"> 
+        Lorem ipsum <span class="primary">dolor</span> sit amet, consectetur adipisicing elit. Nostrum, necessitatibus.
+    </p>
+    <p class="info">
+    Lorem ipsum <span>dolor</span> sit amet consectetur adipisicing elit. A, nemo.
+    </p>
+    <p>
+        Test paragraph
+    </p>
+    <a href="#">Home</a>
+    
+</body>
+</html>

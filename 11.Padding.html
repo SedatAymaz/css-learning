@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{  
+            margin: 0;
+            padding: 0;
+        }
+        div.rabbit{
+            width: 457px; /* width ve height verdiğimiz zaman sadece content boyutunu veriyoruz*/
+            height: 50px;
+            border: 5px solid black ;
+            border-radius: 5px;/* kenarları px bazlı ovalleştiriyor*/
+            background-color: brown; /**/
+            color: yellow; /* rabbit classının içerisindeki içeriği yazının rengini değiştiriyor*/
+            margin: 0 auto;/* sağ ve sol margini eşitliyor sitenin ortasına alıyor*/
+            margin-top: 100px;/* yukarıdan aşağıya doğru marginin geliceği noktayı ayarlıyor*/
+            /* box-sizing: border-box; */ /* bütün divleri aynı boyuta alır ve hepsini eşit bir total değere getirir*/ 
+            /* padding-left: 25px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-top: 100px; */
+            /* sırasıyla tek sırada padding değeri verm
+            top right bottom left */
+            padding: 25px 25px 0px 25px;
+
+
+        }
+        div.carrot{
+            width: 457px;
+            height: 50px;
+            background-color: brown;
+            color: yellow;
+            margin: 0 auto;
+            margin-top: 10px;
+            padding: 25px 25px 0px 25px;
+            border: 5px solid black;
+            border-radius: 5px;
+            
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <div class="rabbit" >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, quaerat.
+    </div>
+    <div class="carrot">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, veritatis!
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class(State)</title>
+    <style>
+        a{
+            color: white;
+            font-size: 1.5em;
+            display: inline-block;
+            background: blue ;
+            padding: 10px;
+            text-decoration: none; /*alttaki çizgiyi kaldırıyor*/
+            border-radius: 5px;
+        }
+        a:hover{
+            background: white;
+            color: blue;
+            border: 1px solid blue;
+            
+        }
+        
+        
+        
+        /* 
+        selector:pseudo_class{
+            .....
+        } 
+        */
+        /* a{
+            font-size: 24px;
+        } */
+        /*linke hiç tıklanmamışkenki rengini belirliyor*/
+        /* a:link {
+            color: green;
+        } */
+        /*daha önceden tıklanmış linklerin rengini belirliyor.*/
+        /* a:visited{
+            color: black;
+        } */
+        /*!important önemli kılıyor ve orada yazdığın şeye hep öncelik veriyor.*/
+        /* span{
+            color: yellow;
+        } */
+      
+        /*a:hover{ color : red;} linkin üzerine mouse yi götürdüğün annda rengini değiştiriyor. */
+        /* a:hover {
+            color: red;
+        }
+        a:active{
+            color: orange;
+        } */
+        /* input girişi birşey yazmak için açılan kısım*/
+        /* input{
+            font-size: 1.5em;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid black;
+        }
+        /*Focus durumnda yani içerisine tıkladığımda çıkan çerçeve outline 0 ise çıkmıyor border verirsek çıkar */
+        /*
+        input:focus{
+            outline: 0;
+            border: 2px solid red;
+        } */
+        
+    </style>
+
+</head>
+<body>
+    <!-- <span style="color:red!important">Sedat Baran</span> !important kodu önemli kılar -->
+
+    <!-- <a href="#">This is a link</a> -->
+    <a href="https://facebook.com">Facebook</a>
+    <!-- <input type="text" placeholder="Name"> -->
+    
+</body>
+</html>

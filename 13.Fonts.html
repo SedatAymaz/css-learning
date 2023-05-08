@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Fonts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <!-- Google Fonts üzerinden aldığım fontu yukarıdaki iki satırda headin içerisine yazıyoruz ve sitedeki font-family kodunu alıyoruz. -->
+    <style>
+        html{
+            font-size: 10px;
+        }
+        h1{
+
+            /*font-family: 'Raleway', sans-serif;*/
+            font-family: 'Raleway', sans-serif;
+        }
+        p{
+            font-size: 1.5rem;
+            /* line-height: 1.5em; */
+        }
+        .sedat{
+            font-size: 16px;
+        }
+        div{
+            font-size: 20px;
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        /* div span{
+            font-size: 100%;
+        } */
+        span{
+            font-size: 1.5rem;
+            font-style: italic;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Yayaya</h2>
+    <h1>Sedat Baran Aymaz</h1>
+    
+    <p class="sedat">Lorem ipsum dolor sit amet <span>consectetur</span> adipisicing elit. Excepturi, minus.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, vel.</p>
+    <div>
+        <p>Lorem, ipsum dolor sit amet <span>consectetur</span> adipisicing <span>elit</span>. Quasi, vero!</p>
+    </div>
+</body>
+</html>

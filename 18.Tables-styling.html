@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables Styling</title>
+</head>
+<style>
+        table,tr,td,th{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table{
+            width: 50%;
+            margin-left: auto;/**/
+            margin-right: auto;/**/
+            font-size: 1.5em;
+        }
+        th,td{
+            padding: 7px;
+        }
+        thead tr{
+            background: pink;
+            color: white;
+        }
+        tbody{
+            text-align: center;
+        }
+        tbody tr:nth-child(even){
+            background: #f2f2f2;
+        }
+        /*mouseyi üzerine götürdüğünde arka plan rengi değişiyor.*/
+        tbody tr:hover{
+            background: #ddd;
+        }
+        
+</style>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Ad</th>
+                <th>Departman</th>
+                <th>Maaş</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+                <td>Baran Aymaz</td>
+                <td>Çöp kamyonu şöförü</td>
+                <td>38000</td>
+            </tr>
+            <tr>
+                <td>Onur Kaptan</td>
+                <td>Çöp atan</td>
+                <td>-900</td>
+            </tr>
+            <tr>
+                <td>Selam Burak</td>
+                <td>İzleyici</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Çıtırlar</td>
+                <td>Avcılık</td>
+                <td>-4000</td>
+            </tr>
+         </tbody>
+
+    </table>
+</body>
+</html>

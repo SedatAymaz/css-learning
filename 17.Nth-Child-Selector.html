@@ -9,7 +9,7 @@
         p{
             font-size: 1.5em;
         }
-        p:last-child{
+        /* p:last-child{
             background-color: yellow;
         }
         p:nth-child(1){
@@ -24,6 +24,30 @@
         p:nth-child(4){
             color: blue;
             background-color: brown;
+        } */
+        /* çift = even çift olanları seç*/
+        /* ul li:nth-child(even){ 
+            color: red;
+        } */
+        /* ul li:nth-child(odd){
+            color: blue;
+        } */
+        /* an + b n = 0, b = 0 */
+        ul {
+            font-size: 1.5em;
+            list-style-type: none;
+        }
+        /*n = 0 b = 0 , 0 , 2,4,6,8,10*/
+        ul li:nth-child(2n){
+            color: red;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        ul li:nth-child(2n + 1){
+            color: blue;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        ul li:nth-child(n + 4){
+            background-color: blanchedalmond;
         }
         
         
@@ -31,27 +55,19 @@
     </style>
 </head>
 <body>
-    <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, quisquam.
-    </p>
-    
-    <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, quisquam.
-    </p>
+    <ul>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
 
-    <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, quisquam.
-    </p>
-
-    <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, quisquam.
-    </p>
-
-
-    <p>
-        last Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, quisquam.
-    </p>
-    <p>Lorem ipsum dolor sit amet.... consectetur adipisicing elit. Aut, ut.</p>
+    </ul>
 
 
 </body>

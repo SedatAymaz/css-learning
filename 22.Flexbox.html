@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Flexbox</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .box{
+            text-align: center;
+            background: rgb(226, 226, 226);
+            width: 200px;
+            border: 1px solid black;
+            margin: 10px;
+            height: 200px;
+        }
+        .container{
+            width: 75%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column; /* ***row: yan yana sıarlar sütun halında itemleri ***column: yuakrıdan ağaşıya doğru sıaralar itemleri   */
+            min-height: 600px; /* içinde yukarıdan aşağıya taşma yaparsa kendiliğinde büyütür.*/
+            background: black;
+            /* justify-content: flex-start; */ /*center iki tarafa da dağıtıyor flex-start soldan flex-end sağdan başlatıyor space-between aralarına atıyor space-around yine aralarda fakat boşlukları 2 katı yapıyor  ve sol sağ yada boşluk atıyor space-evenly ise  hertafaına eşit boşluk atıyor  */ 
+            /*align-items: flex-start;*/  /*etrafına komple boşluk koyuyor ve aşağıdan üssten */
+            flex-wrap: wrap; /*itemleri sığmadı duurmda küçültmek yerine alt sıraya kaydırmaya yarıyor*/
+            justify-content: center;
+            align-items: center;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+<!-- Flex Container -->
+<div class="container">
+        <div class="box">
+        <h1>Article</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, pariatur!</p>
+        </div>
+        <div class="box">
+        <h1>Article</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, pariatur!</p>
+        </div> 
+        <div class="box">  
+        <h1>Article</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, pariatur!</p>
+        </div>
+        <div class="box">  
+        <h1>Article</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, pariatur!</p>
+        </div>
+        <div class="box">  
+        <h1>Article</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, pariatur!</p>
+        </div>
+        <!-- <div class="box">  
+        <h1>Article</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, pariatur!</p>
+        </div>
+        <div class="box">  
+        <h1>Article</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, pariatur!</p>
+        </div>
+        <div class="box">  
+        <h1>Article</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, pariatur!</p>
+        </div> -->
+</div>
+    
+</body>
+</html>

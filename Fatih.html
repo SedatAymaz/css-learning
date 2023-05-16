@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			.wrapper {
+				min-height: 100vh;
+				min-width: 100vw;
+				background-color: red;
+				color: yellow;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.container {
+				width: 450px;
+				height: 450px;
+				border: 1px solid #ccc;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+			.child {
+				display: flex;
+				justify-content: space-between;
+				width: 80%;
+			}
+			/* child class'ındaki div elementinin child'ı olan tüm buttonları seçer */
+			/* .child button {
+				background-color: black;
+				color: #ccc;
+			} */
+
+			/* child class'ındaki div elementinin birinci dereceden child'ı olan buttonları seçer */
+			.child > button {
+				color: red;
+				background-color: #ccc;
+			}
+		</style>
+		<div class="wrapper">
+			<div class="container">
+				<h3>Personal Info</h3>
+				<div class="child">
+					<input type="text" />
+					<button>İlk Child</button>
+					<div class="child2">
+						<input type="text" />
+						<button>Tıkla</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block-Inline </title>
+    <!-- h1(Block olduğu için manuel bir şekilde boy ve yükseklik ayarı yapılabiliyor) fakat a(Inline olduğu için manule bir şekilde boy ve yükseklik ayarı yapılamıyor . )
+          Block bir kodu inline'a çevirebiliyoruz bunun için sayfayı incelediğimizde çıkan styles da element.style{ display.inline}içerisine yazmamız gerekiyor.  -->
+    <style>
+
+h1 {
+    width: 100px;
+    height: 100px;
+}
+a{
+    width: 100px;
+    height: 100px;
+}
+
+    </style>
+
+</head>
+<body>
+    <h1>Başlık 1</h1> <!-- block-->
+    <a href="#">Link</a> <!-- inline-->
+</body>
+</html>

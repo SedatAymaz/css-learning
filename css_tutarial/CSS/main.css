@@ -74,3 +74,58 @@ html{
     color: red;
     opacity: 0.5;
 }
+/* ---   Image   ---*/
+.sfc-image{
+    width: 35%;
+    height: auto;
+    margin-right: 0.5rem;
+    position: relative;
+}
+.sfc-image img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.sfc-image span{
+    background-color: red;
+    padding: 0.25rem;
+    color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    top: 15px;
+    left: 0px;
+}
+#sfc {
+    color: #333;
+    padding: 1rem;
+}
+.sfc{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.sfc .sfc-mk{
+    display: flex;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.sfc .sfc-mk .sfc-info .title{
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.sfc .sfc-mk .sfc-info .description{
+    letter-spacing: 1.2px;
+    margin-bottom: 0.25rem;
+    opacity: 0.6;
+}
+.sfc .sfc-mk .sfc-info .instructor{
+    letter-spacing: 1.2px;
+    margin-bottom: 0.25rem;
+    opacity: 0.6;
+}
+.sfc .sfc-mk .sfc-info .rating{
+    letter-spacing: 1.2px;
+    margin-bottom: 0.25rem;
+    opacity: 0.6;
+}

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&family=Smokum&display=swap');
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Quicksand';
+        }
+        #navbar {
+            display: flex;
+            justify-content: space-between;
+            height: 75px;
+        }
+        .home-main {
+            background-color: #282A35;
+        }
+        #navbar #menu-area {
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+        }
+        #navbar #menu-area a {
+            letter-spacing: 0.5px;
+            padding: 18px 16px;
+            list-style-type: none;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        #navbar #menu-area a:hover {
+            color: white;
+            background-color: green;
+        }
+        #logo i {
+            font-size: 50px;
+            padding: 10px;
+        }
+        .menu-area-right a {
+            height: 50%;
+            width: 100%;
+            border-radius: 25px;
+            margin-right: 5px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+            white-space: nowrap;
+            margin: 10px 0px 10px 20px;
+        }
+        .home{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .home > h1{
+            margin-top: 15px;
+        }
+        .home .input-div{
+            width: 50%;
+            height: 50%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .home > .input-div > input{
+            width: 400px;    
+            height: 47px;
+            border: 0px;
+            outline: none;
+            border-radius: 25px;
+            border-bottom-right-radius: 0px;
+            border-top-right-radius: 0px;
+        }
+        .home > .input-div > input:active{
+            border: 0px;
+        }
+        .btn{
+            border-radius: 25px;
+            float: left;
+            width: 100px;
+            padding: 13px;
+            background: #04AA6D;
+            color: white;
+            font-size: 17px;
+            border: 1px solid #282A35;
+            border-left: none;
+            cursor: pointer;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            outline: none;
+        }
+        .input-div > button:hover{
+            border: 1px solid green;
+            background-color: green;
+        }
+        .input-div > button:active{
+            border: 1px solid green;
+            background-color: white;
+        }
+        input[type="text"]{
+            padding-left: 25px;
+        }
+        .home a{
+            margin-bottom: 100px;
+        }
+        .home h1{
+            margin-top: 75px;
+        }
+        .home h3{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .purple{
+            background-color: #9763f6;
+        }
+        .pink{
+            background-color: pink !important;
+        }
+        .yellow{
+            background-color: #fff4a3;
+        }
+        .green{
+            background-color: #04AA6D;
+        }
+        .seagreen{
+            background-color: #D9eee1;
+        }
+        .white-color{
+            color: white;
+        }
+        .black-color{
+            color: #333;
+        }
+        .brown-color{
+            color: brown;
+        }
+        .navbar-login{
+        border-top-left-radius: 0px!important;
+        border-bottom-left-radius: 0px!important;
+        color: #282A35;
+        margin-left: -13px!important;
+        padding-left: 20px!important;
+        }
+        .navbar-signup{
+            z-index: 1;
+            color: whitesmoke;
+        }
+        #navbar .menu-area-right{
+            margin-right: 20px;
+        }
+        .icons{
+            display: flex;
+            justify-content: end;
+        }
+        .icons a{
+            color:white;
+            margin-right: 30px;
+            margin-top: 10px;
+        }
+        .menu-area-right a i{
+            padding-right: 4px;
+        }
+        #menu-area{
+            margin-left: 25px;
+        }
+        .main-step-two{
+            width: 100%;
+            height: 650px;
+            box-sizing: inherit;
+            display: flex;
+            background-color: #D9eee1;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        .main-step-two .html-content-left{
+            padding: 0px;
+            width: 25%;
+            text-align: center;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-left: 10%;
+            
+        }
+        
+        .html-content-left a{
+            height: 50%;
+            width: 50%;
+            border-radius: 25px;
+            margin-right: 5px;
+            text-align: center;
+            margin-top: 15px;
+            white-space: nowrap;
+            margin: 10px 0px 10px 20px;
+            padding: 10px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .cl-mb{
+            color: mediumblue;
+        }
+        .html-example-body{
+            padding: 15px;
+            width: 32%;
+            height: auto;
+            background-color: #e7e9eb;
+            border-radius: 2px;
+            box-shadow: 1px 1px 1px 1px;
+            margin-top: 80px;
+            margin-right: 15%;
+        }
+        .html-example-main{
+            background-color: white;
+            border-left: 4px solid #04AA6D;
+        }
+        .pad-ing{
+            padding: 15px;
+        }
+        .btn-example button{
+            display: flex;
+            margin: 25px 10px 15px 15px;
+            padding: 8px 40px;
+            border-radius: 20px;
+            background-color: #04AA6D;
+            border: 0px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .btn-example button:hover{
+            background-color: #059862;
+        }
+        .btn-example button:active{
+            background-color: #059862;
+            color: whitesmoke;
+        }
+        .css-tutorial-right-side{
+            padding: 15px;
+            width: 32%;
+            height: 75%;
+            background-color: #e7e9eb;
+            border-radius: 2px;
+            box-shadow: 1px 1px 1px 1px;
+            margin-top: 80px;
+            margin-right: 15%;
+        }
+        .css-tutorial{
+            display: flex;
+            justify-content: space-between;
+            background-color: #FFF4A3;
+            height: 600px;
+        }
+        .css-tutorial-left-side{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 13%;
+            
+            
+        }
+        .css-tutorial-left-side a{
+            width: 70%;
+            height: auto;
+            text-decoration: none;
+            border-radius: 25px;
+            padding: 10px;
+            margin: 10px 10px 10px 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .javascript-tutorial-right-side{
+            padding: 15px;
+            width: 32%;
+            height: 75%;
+            background-color: #e7e9eb;
+            border-radius: 2px;
+            box-shadow: 1px 1px 1px 1px;
+            margin-top: 80px;
+            margin-right: 15%;
+        }
+        .javascript-tutorial{
+            display: flex;
+            justify-content: space-between;
+            background-color: #282A35;
+            height: 600px;
+        }
+        .javascript-tutorial-left-side{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10%;
+            
+            
+        }
+        .javascript-tutorial-left-side a{
+            width: 70%;
+            height: auto;
+            text-decoration: none;
+            border-radius: 25px;
+            padding: 10px;
+            margin: 10px 10px 10px 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav id="navbar">
+            <div id="menu-area">
+                <div id="logo">
+                    <a href=""><i class=""></i></a>
+                </div>
+                <a href="www.google.com" class="black-color">Tutorials</a>
+                <a href="#upgrade" class="black-color">References</a>
+                <a href="#upgrade" class="black-color">Exercise</a>
+                <a href="#upgrade" class="black-color">Bootcamps</a>
+                <a href="#upgrade" class="black-color">Videos</a>
+            </div>
+            <div id="menu-area" class="menu-area-right">
+                <a href="#upgrade" class="purple bg white-color"><i class="fa-solid fa-star"></i>Upgrade</a>
+                <a href="#upgrade" class="pink bg black-color">Get Certified</a>
+                <a href="#createwebsite" class="yellow bg black-color">Create Website</a>
+                <a href="#upgrade" class="green bg navbar-signup">Sign Up</a>
+                <a href="#upgrade" class="seagreen bg navbar-login">Log in</a>
+            </div>
+        </nav>
+        <div class="home-main">
+            <div class="icons">
+                <a href="#worldicon"><i class="fa-solid fa-circle-half-stroke"></i></a>
+                <a href="#worldicon"><i class="fa-solid fa-earth-americas"></i></a>
+                <a href="#worldicon"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+            <div class="home">
+                <h1 style="font-size: 70px; font-weight: 700; color: #fff;">Learn to Code</h1>
+                <h3 style="color:pink; font-size: 30px;">With the world's largest web developer site.</h3>
+            
+            <div class="input-div">
+                <input type="text" placeholder="Search our tutorials, e.g. HTML" value="">
+                <button class="btn"><i class="fa-solid fa-magnifying-glass icon"></i></button>
+                
+            </div>
+                <a href="#nswtb"  style="color:white; font-weight: bold; margin-top: 20px; font-size: 1.25rem;">Not Sure Where To Begin?</a>
+                <svg style="background-color:#d9eee1;" width="100%" height="70" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="#282A35"></path>
+                </svg>
+            </div>
+                <div class="main-step-two">
+                    <div class="html-content-left">
+                        <h1 style="font-size: 5rem; margin-bottom: 20px;">HTML</h1>
+                        <h3 style="margin-bottom: 20px;">The language for building web pages</h3>
+                        <a href="#learn" class="green" style="color: white; ">Learn HTML</a>
+                        <a href="#tutorial" class="yellow black-color">Video Tutorial</a>
+                        <a href="#reference" style="background-color: black; color: white;">HTML Reference</a>
+                        <a href="#certified" class="black-color pink">Get Certified</a>
+                    </div>
+                    <div class="html-example-body">
+                        <h2 style="margin: 20px;">HTML Example:</h2>
+                        <div class="html-example-main pad-ing" style="font-weight: bold;">
+                            <span class="cl-mb"><<span style="color: brown;">!DOCTYPE <span style="color: red;">html</span></span>></span>
+                            <br>
+                            <span class="cl-mb"><<span style="color: brown;">html</span>></span>
+                            <br>
+                            <span class="cl-mb"><<span style="color: brown;">title</span>><span style="color: black;">HTML Tutorial</span><span><<span style="color: brown;">/title</span>></span></span>
+                            <br>
+                            <span class="cl-mb"><<span style="color: brown;">body</span>></span>
+                            <br>
+                            <br>
+                            <span class="cl-mb"><<span style="color: brown;">h1</span>></span><span>This is a heading</span><span><<span style="color: brown;">/h1</span>></span>
+                            <br>
+                            <span class="cl-mb"><<span style="color: brown;">h1</span>></span><span>This is a paragraph.</span><span><<span style="color: brown;">/h1</span>></span>
+                            <br>
+                            <br>
+                            <span class="cl-mb"><<span style="color: brown;">/body</span>></span>
+                            <br>
+                            <span class="cl-mb"><<span style="color: brown;">/html</span>></span>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                        <div class="btn-example">
+                            <button>Try it Yourself</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="css-tutorial">
+                <div class="css-tutorial-left-side">
+                    <h1 style="margin: 15px; font-size: 5rem;">CSS</h1>
+                    <h3 style="margin: 15px 15px 35px 15px;">The language for styling web pages</h3>
+                    <a href="#learncss" class="green white-color">Learn CSS</a>
+                    <a href="#cssreference" style="background-color: black; color: white;">CSS References</a>
+                    <a href="#getcertified" class="pink black-color">Get Certified</a>
+                </div>
+                <div class="css-tutorial-right-side">
+                    <h2 style="margin: 20px;">CSS Example:</h2>
+                    <div class="html-example-main pad-ing" style="font-weight: bold;">
+                        <span style="color: brown;">body <span style="color: black;">{<br><span style="color: red;">  background-color</span></span>:  </span><span style="color: mediumblue;">  lightblue</span><span>;</span><br><span style="color: black;">}</span>
+                        <br>
+                        <br>
+                        <span style="color: brown;">h1 <span style="color: black;">{<br></span><span style="color: red;">color</span><span>: </span><span style="color: mediumblue;">white</span><span>;</span><br><span style="color: red;">text-align</span><span>: </span><span style="color: mediumblue;">center</span><span>;</span><br><span style="color: black;">}</span>
+                        <br>
+                        <br>
+                        <span style="color: brown;">p <span style="color:black;">{<br></span><span style="color: red;">font-family</span><span>: <span style="color: mediumblue;">verdana</span>;</span></span><br><span style="color: black;">}</span>
+                    </div>
+                    <div class="btn-example">
+                        <button>Try it Yourself</button>
+                    </div>
+                </div>
+            </div>
+            <div class="javascript-tutorial">
+                <div class="javascript-tutorial-left-side">
+                    <h1 style="margin: 15px; font-size: 5rem; color: white; ">JavaScript</h1>
+                    <h3 style="margin: 15px 15px 35px 15px; color: white;">The language for programming web pages</h3>
+                    <a href="#learncss" class="green white-color">Learn JavaScript</a>
+                    <a href="#cssreference" style="background-color: black; color: white;">JavaScript References</a>
+                    <a href="#getcertified" class="pink black-color">Get Certified</a>
+                </div>
+                <div class="javascript-tutorial-right-side">
+                    <h2 style="margin: 20px;">CSS Example:</h2>
+                    <div class="html-example-main pad-ing" style="font-weight: bold;">
+                        <span><<span>button <span>onclick</span></span>=</span><span>"myFunction()"></span><span>Click Me!</span><span><</span><span>/button</span><span>></span>
+                        <br>
+                        <br>
+                        <span >h1 <span >{<br></span><span>color</span><span>: </span><span >white</span><span>;</span><br><span>text-align</span><span>: </span><span >center</span><span>;</span><br><span>}</span>
+                        <br>
+                        <br>
+                        <span>p <span >{<br></span><span>font-family</span><span>: <span >verdana</span>;</span></span><br><span >}</span>
+                    </div>
+                    <div class="btn-example">
+                        <button>Try it Yourself</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
